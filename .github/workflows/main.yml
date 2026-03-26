@@ -1,19 +1,19 @@
 name: my first workflow
 on: push
 jobs:
-  my-first-job:
-    runs-on: ubuntu-latest
-    steps:
-        - name: list all lfiles
-          run: ls -a
-        - name: print workig directory
-          run: pwd
-        - name: checkout code
-          uses: actions/checkout@v4
-        - name: list all files
-          run: ls -a
-        - name: print working file contents
-          run: cat ./.github/workflows/main.yml
+  # my-first-job:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #       - name: list all lfiles
+  #         run: ls -a
+  #       - name: print workig directory
+  #         run: pwd
+  #       - name: checkout code
+  #         uses: actions/checkout@v4
+  #       - name: list all files
+  #         run: ls -a
+  #       - name: print working file contents
+  #         run: cat ./.github/workflows/main.yml
 
 
   my-second-job:
@@ -25,7 +25,7 @@ jobs:
           uses: actions/setup-node@v3
           with:
             node-version: '25'
-
         - name: node current version
           run: node -v
-          
+        - name: install react js
+          run: npm install create-react@latest .
