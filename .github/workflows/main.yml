@@ -1,5 +1,5 @@
 name: Test
-on: workflow_dispatch
+on: push
 jobs:
   my-first-job:
     runs-on: ubuntu-latest
@@ -8,9 +8,5 @@ jobs:
           run: ls -la
         - name: print workig directory
           run: pwd
-        - name: create js file
-          run: echo "console.log('Hello, World!');" > hello.js 
-        - name: list all files again
-          run: ls -la
-        - name: run js file
-          run: node hello.js 
+        - name: checkout code
+          uses: actions/checkout@v4
