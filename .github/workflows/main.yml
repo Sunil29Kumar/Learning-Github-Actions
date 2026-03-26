@@ -13,4 +13,4 @@ jobs:
         - name: list all files
           run: ls -a
         - name: print working file contents
-          run: cat ./github/workflows/main.yml
+          run: cat ./github/workflows/my-first-job.yml
