@@ -16,16 +16,23 @@ jobs:
   #         run: cat ./.github/workflows/main.yml
 
 
-  my-second-job:
+  # my-second-job:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #       - name: node current version
+  #         run: node -v
+  #       - name: update node version
+  #         uses: actions/setup-node@v3
+  #         with:
+  #           node-version: '25'
+  #       - name: node current version
+  #         run: node -v
+  #       - name: install react js
+  #         run: npm install create-react@latest .
+
+   third-job:
     runs-on: ubuntu-latest
     steps:
-        - name: node current version
-          run: node -v
-        - name: update node version
-          uses: actions/setup-node@v3
-          with:
-            node-version: '25'
-        - name: node current version
-          run: node -v
-        - name: install react js
-          run: npm install create-react@latest .
+      - name: learinig expressions
+        run: echo "${{2>1}}"
+      
