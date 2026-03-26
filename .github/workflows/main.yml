@@ -1,4 +1,4 @@
-name: Test
+name: my first workflow
 on: push
 jobs:
   my-first-job:
@@ -13,4 +13,4 @@ jobs:
         - name: list all files
           run: ls -a
         - name: print working file contents
-          run: cat ./github/workflows/Test.yml
+          run: cat ./github/workflows/main.yml
