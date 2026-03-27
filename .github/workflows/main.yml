@@ -36,4 +36,7 @@ jobs:
       - name: learinig expressions
         run: echo "${{2>1}}"
       - run: echo "${{toJson(github)}}"
+      - run: echo "${{toJson(env)}}"
+      - run: echo "${{toJson(vars)}}"
+      - run: echo "${{toJson(secrets)}}"
       
