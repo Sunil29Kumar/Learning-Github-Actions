@@ -1,5 +1,5 @@
 name: my first workflow
-on: push
+on: [ push] 
 jobs:
   # my-first-job:
   #   runs-on: ubuntu-latest
@@ -30,13 +30,23 @@ jobs:
   #       - name: install react js
   #         run: npm install create-react@latest .
 
-   third-job:
+  #  third-job:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: learinig expressions
+  #       run: echo "${{2>1}}"
+  #     - run: echo "${{toJson(github)}}"
+  #     - run: echo "${{toJson(env)}}"
+  #     - run: echo "${{toJson(vars)}}"
+  #     - run: echo "${{toJson(secrets)}}"
+
+  # env 
+
+  forth-job:
     runs-on: ubuntu-latest
+    env:
+      MY_NAME: "sunilkumar"
     steps:
-      - name: learinig expressions
-        run: echo "${{2>1}}"
-      - run: echo "${{toJson(github)}}"
-      - run: echo "${{toJson(env)}}"
-      - run: echo "${{toJson(vars)}}"
-      - run: echo "${{toJson(secrets)}}"
+      - name: print env variable
+        run: echo "my name is $MY_NAME"
       
