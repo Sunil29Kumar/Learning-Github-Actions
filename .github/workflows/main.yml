@@ -49,4 +49,5 @@ jobs:
     steps:
        - run: echo "my name is $MY_NAME"
        - run: echo "my name is ${{env.MY_NAME}}"
+       - run: echo "${{vars.MY_FRIST_VAR}}"
       
