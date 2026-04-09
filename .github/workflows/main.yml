@@ -47,6 +47,6 @@ jobs:
     env:
       MY_NAME: "sunilkumar"
     steps:
-      - name: print env variable
-        run: echo "my name is $MY_NAME"
+       - run: echo "my name is $MY_NAME"
+       - run: echo "my name is ${{env.MY_NAME}}"
       
